@@ -28,7 +28,7 @@ function textOmitter(text) {
   const output = [];
 
   textArray.forEach(function(element) {
-  if (element !== "gigglewater" || element !== "bushwa" || element !== "gasper" || element !== "mazuma" || element !== "sockdollager" || element !== "wurp") {
+  if (element !== "gigglewater" && element !== "bushwa" && element !== "gasper" && element !== "mazuma" && element !== "sockdollager" && element !== "wurp") {
     output.push(element);  
     }
   })
