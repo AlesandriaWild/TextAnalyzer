@@ -11,3 +11,26 @@ function wordCounter(text) {
   });
   return wordCount;
 }
+
+function numberOfOccurrencesInText(word, text) {
+  const textArray = text.split(" ");
+  let wordCount = 0;
+  textArray.forEach(function(element) {
+    if (element.toLowerCase().includes(word.toLowerCase())) {
+      wordCount++
+    }
+  });
+  return wordCount;
+}
+
+function textOmitter(text) {
+  const textArray = text.split(" ");
+  const output = [];
+
+  textArray.forEach(function(element) {
+  if (element !== "gigglewater" || element !== "bushwa" || element !== "gasper" || element !== "mazuma" || element !== "sockdollager" || element !== "wurp") {
+    output.push(element);  
+    }
+  })
+  return output;
+}
